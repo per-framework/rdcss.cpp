@@ -1,0 +1,2 @@
+add_conventional_library(rdcss_v1)
+target_link_libraries(rdcss_v1 PUBLIC dumpster_v1 polyfill_v1 lax_v1 PRIVATE intrinsics_v1)

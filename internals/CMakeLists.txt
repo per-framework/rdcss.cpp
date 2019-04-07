@@ -1,0 +1,2 @@
+add_conventional_executable_test(rdcss_test)
+target_link_libraries(rdcss_test PRIVATE rdcss_v1 testing_v1)

@@ -1,0 +1,29 @@
+language: cpp
+
+notifications:
+  email: false
+
+matrix:
+  include:
+    - os: linux
+      dist: trusty
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+            - llvm-toolchain-trusty-7
+          packages:
+            - g++-8
+            - clang-7
+    - os: osx
+      osx_image: xcode10.2
+    - os: windows
+
+git:
+  submodules: false
+
+before_install:
+  - git submodule update --init
+
+script:
+  - .cppsm/travis-ci || ./test
