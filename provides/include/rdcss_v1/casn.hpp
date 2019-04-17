@@ -1,7 +1,7 @@
 #pragma once
 
-#include "rdcss_v1/casn_synopsis.hpp"
 #include "rdcss_v1/config.hpp"
+#include "rdcss_v1/synopsis.hpp"
 
 #include "lax_v1/comparison.hpp"
 #include "lax_v1/logical.hpp"
