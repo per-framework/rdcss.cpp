@@ -5,6 +5,8 @@ multi-word compare-and-swap for C++.
 
 See [`synopsis.hpp`](provides/include/rdcss_v1/synopsis.hpp) for the API.
 
+**NOTE** that this is still very much unfinished work-in-progress!
+
 ## <a id="contents"></a> [≡](#contents) [Contents](#contents)
 
 - [References](#references)
