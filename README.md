@@ -3,6 +3,8 @@
 [RDCSS](https://www.cl.cam.ac.uk/research/srg/netos/papers/2002-casn.pdf) based
 multi-word compare-and-swap for C++.
 
+See [`synopsis.hpp`](provides/include/rdcss_v1/synopsis.hpp) for the API.
+
 ## <a id="contents"></a> [≡](#contents) [Contents](#contents)
 
 - [References](#references)

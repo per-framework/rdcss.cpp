@@ -4,6 +4,8 @@
 
 namespace rdcss_v1 {
 
+// casn.hpp ====================================================================
+
 // Multi-word atomic compare and set (CASN)
 struct CASN {
   // Mutable atoms -------------------------------------------------------------
