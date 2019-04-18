@@ -22,7 +22,7 @@ class CASN_private : CASN {
       : lax::or_m<
             lax::and_m<
                 lax::is_pointer_m<Value>,
-                lax::lte_m<lax::value_t<size_t, 2>,
+                lax::lte_m<lax::auto_t<2>,
                            lax::alignment_of_m<lax::remove_pointer_m<Value>>>>,
             lax::and_m<lax::is_array_m<Value>,
                        is_stored_plain_m<lax::remove_all_extents_m<Value>>>> {};
