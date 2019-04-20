@@ -69,8 +69,8 @@ class CASN_detail : CASN {
   struct rdcss_t;
   struct casn_t;
 
-  static content_t *cas1(atom_base_t &atom, content_t *expected,
-                         content_t *desired);
+  static content_t *
+  cas1(atom_base_t &atom, content_t *expected, content_t *desired);
 
   static bool is_rdcss(content_t *content);
   static content_t *rdcss(rdcss_t &descriptor);

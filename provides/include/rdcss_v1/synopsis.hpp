@@ -30,7 +30,8 @@ struct CASN {
   // Describes a single CAS operation.
 
   template <class Value, class Forwardable_Expected, class Forwardable_Desired>
-  static op_t<Value> op(atom_t<Value> &atom, Forwardable_Expected &&expected,
+  static op_t<Value> op(atom_t<Value> &atom,
+                        Forwardable_Expected &&expected,
                         Forwardable_Desired &&desired);
   // Specifies a single CAS operation.
 

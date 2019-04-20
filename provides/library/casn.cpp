@@ -19,7 +19,8 @@ CASN_detail::content_t *CASN_detail::rdcss(rdcss_t &descriptor) {
   while (true) {
     content_t *result = cas1(atom, expected, &descriptor);
     if (result == expected) {
-      cas1(atom, &descriptor,
+      cas1(atom,
+           &descriptor,
            descriptor.status == UNDECIDED ? desired : expected);
       return result;
     } else if (is_rdcss(result)) {
@@ -31,7 +32,8 @@ CASN_detail::content_t *CASN_detail::rdcss(rdcss_t &descriptor) {
 }
 
 void CASN_detail::rdcss_complete(atom_base_t &atom, rdcss_t &descriptor) {
-  cas1(atom, &descriptor,
+  cas1(atom,
+       &descriptor,
        descriptor.status == UNDECIDED ? descriptor.desired
                                       : descriptor.expected);
 }
