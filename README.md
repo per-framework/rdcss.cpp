@@ -1,4 +1,4 @@
-# [≡](#contents) [RDCSS.C++](#) [![Build Status](https://travis-ci.org/per-framework/rdcss.cpp.svg?branch=v1)](https://travis-ci.org/per-framework/rdcss.cpp)
+# [≡](#contents) [RDCSS.C++](#) [![Build Status](https://travis-ci.org/per-framework/rdcss.cpp.svg?branch=v1)](https://travis-ci.org/per-framework/rdcss.cpp) [![Code Coverage](https://img.shields.io/codecov/c/github/per-framework/rdcss.cpp/v1.svg)](https://codecov.io/gh/per-framework/rdcss.cpp/branch/v1)
 
 [RDCSS](https://www.cl.cam.ac.uk/research/srg/netos/papers/2002-casn.pdf) based
 multi-word compare-and-swap for C++.
