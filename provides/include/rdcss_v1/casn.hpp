@@ -33,8 +33,8 @@ class CASN_private : CASN {
 
   static_assert(!is_stored_plain_v<int>);
   static_assert(is_stored_plain_v<int *>);
-  static_assert(is_stored_plain_v<int * [2]>);
-  static_assert(is_stored_plain_v<float * [2]>);
+  static_assert(is_stored_plain_v<int *[2]>);
+  static_assert(is_stored_plain_v<float *[2]>);
   static_assert(!is_stored_plain_v<float>);
 
   static inline constexpr size_t align_to(size_t alignment, size_t size) {

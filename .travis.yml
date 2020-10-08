@@ -6,24 +6,18 @@ notifications:
 matrix:
   include:
     - os: linux
-      dist: trusty
-      addons:
-        apt:
-          sources:
-            - ubuntu-toolchain-r-test
-            - llvm-toolchain-trusty-7
-          packages:
-            - g++-8
-            - clang-7
+      dist: focal
     - os: osx
-      osx_image: xcode10.2
+      osx_image: xcode12.2
     - os: windows
 
 git:
+  depth: 1
   submodules: false
 
 before_install:
-  - git submodule update --init
+  - export -f travis_nanoseconds travis_time_start travis_time_finish
 
 script:
-  - .cppsm/travis-ci || ./test
+  - if ! [ -x .cppsm/travis-ci ]; then git submodule --quiet update --init --no-recommend-shallow --depth 1 .cppsm; fi
+  - .cppsm/travis-ci
